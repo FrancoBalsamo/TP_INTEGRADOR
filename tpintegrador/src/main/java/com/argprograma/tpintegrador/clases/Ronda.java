@@ -9,7 +9,7 @@ package com.argprograma.tpintegrador.clases;
  * @author francobalsamo
  */
 public class Ronda {
-    public String nro;
+    private String nro;
     private Partido[] partidos;
     private ResultadoEnum.resultadoPartido resEnum;
 
@@ -39,7 +39,7 @@ public class Ronda {
     public int puntos(){
         int resultadoPuntos = 0;
         if(resEnum == ResultadoEnum.resultadoPartido.GANADOR){
-            resultadoPuntos = 3;
+            resultadoPuntos = 1;
         }
         if(resEnum == ResultadoEnum.resultadoPartido.PERDEDOR){
             resultadoPuntos = 0;
