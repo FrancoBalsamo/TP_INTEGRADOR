@@ -50,13 +50,13 @@ public class Pronostico {
     public int puntos(){
         int resultadoPuntos = 0;
         if(resEnum == ResultadoEnum.resultadoPartido.GANADOR){
-            resultadoPuntos = 3;
+            resultadoPuntos = 1;
         }
         if(resEnum == ResultadoEnum.resultadoPartido.PERDEDOR){
             resultadoPuntos = 0;
         }
         if(resEnum == ResultadoEnum.resultadoPartido.EMPATE){
-            resultadoPuntos = 1;
+            resultadoPuntos = 0;
         }
         return resultadoPuntos;
     }
