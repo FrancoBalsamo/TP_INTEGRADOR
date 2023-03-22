@@ -58,10 +58,12 @@ public class Partido {
     
     public ResultadoEnum.resultadoPartido resultado(Equipo equipo){
         ResultadoEnum.resultadoPartido res = null;
-        if(golesEquipo1 < golesEquipo2){
-            
-        } 
-        return res.GANADOR;   
+        if(golesEquipo1 > golesEquipo2){
+            equipo = equipo1;
+        }if(golesEquipo1 > golesEquipo2){
+            equipo = equipo2;
+        }
+        return res;
     }
 
     @Override
