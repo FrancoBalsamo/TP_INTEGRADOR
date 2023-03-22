@@ -19,7 +19,8 @@ public class Tpintegrador {
     }
     
     public static void archivos() throws FileNotFoundException{
-        Scanner entrada = new Scanner(new FileReader("C:\\Users\\francobalsamo\\Downloads\\resultados.csv"));
+        //Scanner entrada = new Scanner(new FileReader("C:\\Users\\Franco Balsamo\\Documents\\GitHub\\TP_INTEGRADOR\\resultados.csv"));
+        Scanner entrada = new Scanner(new FileReader("C:\\Users\\Franco Balsamo\\Documents\\GitHub\\TP_INTEGRADOR\\pronostico.csv"));
         while(entrada.hasNext()){
             String lineas = entrada.nextLine();
             System.out.println(lineas);
