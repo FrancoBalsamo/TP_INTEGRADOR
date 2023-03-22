@@ -9,8 +9,8 @@ package com.argprograma.tpintegrador.clases;
  * @author francobalsamo
  */
 public class Equipo {
-    public String nombre;
-    public String descripcion;
+    private String nombre;
+    private String descripcion;
 
     public String getNombre() {
         return nombre;
@@ -33,5 +33,10 @@ public class Equipo {
     public Equipo(String nombre, String descripcion) {
         this.nombre = nombre;
         this.descripcion = descripcion;
+    }
+
+    @Override
+    public String toString() {
+        return "Equipo{" + "nombre=" + nombre + ", descripcion=" + descripcion + '}';
     }
 }
