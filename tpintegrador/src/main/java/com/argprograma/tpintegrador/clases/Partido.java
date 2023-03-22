@@ -12,9 +12,9 @@ public class Partido {
     private Equipo equipo1;
     private Equipo equipo2;
     
-    public int golesEquipo1;
-    public int golesEquipo2;
-
+    private int golesEquipo1;
+    private int golesEquipo2;
+    
     public Equipo getEquipo1() {
         return equipo1;
     }
@@ -56,11 +56,16 @@ public class Partido {
         this.golesEquipo2 = golesEquipo2;
     }
     
-    private ResultadoEnum.resultadoPartido resultado(Equipo equipo){
+    public ResultadoEnum.resultadoPartido resultado(Equipo equipo){
         ResultadoEnum.resultadoPartido res = null;
         if(golesEquipo1 < golesEquipo2){
             
         } 
         return res.GANADOR;   
+    }
+
+    @Override
+    public String toString() {
+        return "Partido{" + "equipo1=" + equipo1 + ", equipo2=" + equipo2 + ", golesEquipo1=" + golesEquipo1 + ", golesEquipo2=" + golesEquipo2 + '}';
     }
 }
