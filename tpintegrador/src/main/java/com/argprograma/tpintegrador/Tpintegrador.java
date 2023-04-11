@@ -18,13 +18,11 @@ import java.util.ArrayList;
  */
 public class Tpintegrador {
 
-    public static void main(String[] args) throws FileNotFoundException {        
+    public static void main(String[] args){        
         archivos();
     }
     
-    private static ArrayList<Partido> archivos() throws FileNotFoundException{
-        //Scanner entrada = new Scanner(new FileReader("C:\\Users\\FrancoBalsamo\\Documents\\GitHub\\TP_INTEGRADOR\\resultados.csv"));
-        //Scanner entrada = new Scanner(new FileReader("C:\\Users\\Franco Balsamo\\Documents\\GitHub\\TP_INTEGRADOR\\pronostico.csv"));
+    private static ArrayList<Partido> archivos(){
         BufferedReader brResultados, brPronosticos;
         
         ArrayList<Partido> arrayPartido = new ArrayList<>();
