@@ -38,18 +38,19 @@ public class Tpintegrador {
             String lineaResultados;
             String lineaPronosticos;
             
-            Partido partido = new Partido();
-            
             while((lineaResultados = brResultados.readLine()) != null){
                 String[] arrayComas = lineaResultados.split(",");
 
                 Equipo equipo1 = new Equipo(arrayComas[0], "descripción");
                 Equipo equipo2 = new Equipo(arrayComas[3], "descripción");
                 
-                
                 arrayPartido.add(new Partido(equipo1, equipo2, Integer.parseInt(arrayComas[1]), Integer.parseInt(arrayComas[2])));
                 
-                
+                if((lineaPronosticos = brPronosticos.readLine()) != null){
+                    String[] arrayComasPronosticos = lineaPronosticos.split(",");
+                    if(arrayComasPronosticos[1] == "X"){}
+                    Pronostico pronostico = new Pronostico();
+                }
             }
             
             

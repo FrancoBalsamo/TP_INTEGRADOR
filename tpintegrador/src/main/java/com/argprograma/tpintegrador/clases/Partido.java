@@ -59,9 +59,11 @@ public class Partido {
     public ResultadoEnum.resultadoPartido resultado(Equipo equipo){
         ResultadoEnum.resultadoPartido res = null;
         if(golesEquipo1 > golesEquipo2){
-            equipo = equipo1;
-        }if(golesEquipo1 > golesEquipo2){
-            equipo = equipo2;
+            System.out.println(res.GANADOR + equipo.getNombre());
+        }else if(golesEquipo1 < golesEquipo2){
+            System.out.println(res.GANADOR + equipo.getNombre());
+        }else{
+            System.out.println(res.EMPATE);
         }
         return res;
     }
